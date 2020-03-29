@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<input type="url" name="" id="li" placeholder="metter le lien">
+
+
+<div id="image"></div>
+
+<button onclick="url()">lien</button>
+
+<script >
+	function url() 
+	{
+var lien = document.getElementById("li");
+     
+    alert(lien);
+    var img = document.createElement("img");
+
+img.src = "lien";
+
+var div= document.getElementById("image");
+    div.appendChild(img);
+}
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body id="color">
+
+
+
+<input type="color" name="color" id="multi">
+<input type="range" name="color" id="sid">
+
+<button onclick="font();">FontSize</button>
+<button onclick="rotate();">rotate</button>
+<button onclick="select();">Select color</button>
+<button onclick="space();">spacing</button>
+<button onclick="slide();">slide taille</button>
+
+
+<div id="rot">
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+</div>
+
+<script>
+	function font(argument) {
+      
+       document.getElementById('color').style.fontSize = "30px";
+	}
+
+
+   function space(argument) {
+        document.getElementById('rot').style.marginTop = "110px";
+
+	}
+
+	function rotate(argument) {
+        document.getElementById('rot').style.transform = "rotate(90deg)";
+	}
+
+
+
+
+	
+
+
+	function select(argument) {
+          var co =  document.getElementById('multi').value;
+          document.getElementById('color').style.color = co;
+
+	}
+
+
+
+	function slide(argument) {
+          var si =  document.getElementById('sid').value;
+          document.getElementById('rot').style.FontSize = si;
+          alert(si);
+
+	}
+</script>
+</body>
+</html>
